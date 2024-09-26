@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Expense Tracker Demo</title>
+    <script src="main.js" defer></script>
+    <style>
+      .hide {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Expense Tracker</h1>
+    </header>
+    <main>
+      <label for="allow">Allow Input</label>
+      <input type="checkbox" name="allow" id="allow" />
+      <h2>Expenses</h2>
+      <table>
+        <thead>
+          <tr>
+            Description
+          </tr>
+          <tr>
+            Amount
+          </tr>
+          <tr>
+            Total
+          </tr>
+        </thead>
+        <tbody id="expenses"></tbody>
+      </table>
+      <form action="" id="addExpenseForm" class="hide">
+        <input type="text" name="description" id="description" />
+        <input type="number" name="amount" id="amount" />
+        <button type="submit">Add Expense</button>
+      </form>
+    </main>
+  </body>
+</html>
